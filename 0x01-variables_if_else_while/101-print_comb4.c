@@ -6,6 +6,7 @@
 int main(void)
 {
 	int o, t, th;
+
 	for (o = 48; o < 58; o++)
 	{
 		for (t = 49; t < 58; t++)
