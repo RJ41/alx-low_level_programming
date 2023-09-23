@@ -6,6 +6,7 @@
 int main(void)
 {
 	int n, d;
+
 	for (n = 0; n < 100; n++)
 	{
 		for (d = 0; d < 100; d++)
