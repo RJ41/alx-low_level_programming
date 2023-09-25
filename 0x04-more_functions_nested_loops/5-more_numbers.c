@@ -6,14 +6,18 @@
  */
 void more_numbers(void)
 {
-	char n;
-	
-	n = "01234567891011121314";
+	char n, o;
 
-	while (n <= 11)
+	for (n = 0; n < 10; n++)
 	{
-		_putchar(n);
+		for (o = 0; o < 15; o++)
+		{
+			if (o >= 10)
+			{
+				_putchar(o / 10 + '0');
+				_putchar(o % 10 + '0');
+			}
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
-	return (0);
 }
