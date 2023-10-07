@@ -9,6 +9,7 @@ int main(void)
 {
 	int b;
 	char base;
+
 	for (b = '0'; b <= '9'; b++)
 		putchar(b);
 	for (base = 'a'; base <= 'f'; base++)
