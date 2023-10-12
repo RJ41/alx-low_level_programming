@@ -2,7 +2,8 @@
 
 /**
  * _isdigit - checks for a digit
- * Return: 1 if c is a digit, 0 if otherwise
+ * @c: value to check
+ * Return: 1 if true, 0 if otherwise
  */
 int _isdigit(int c)
 {
@@ -14,5 +15,4 @@ int _isdigit(int c)
 	{
 		return (0);
 	}
-	/**return (c >= '0' && c <= '9'); */
 }
