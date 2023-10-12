@@ -2,28 +2,26 @@
 
 /**
  * main - check the code
- *
+ * @size: size of the square
  * Return: Always 0.
  */
 void print_squares(int size)
 {
-	int g, h;
-	
-	h = 0;
-	
-	if (size < 1)
-		_putchar('\n');
-	
-	while (h < size)
+	if (size <= 0)
 	{
-		g = 0;
-		
-		while (g < size)
-		{
-			_putchar('#');
-			g++;
-		}
 		_putchar('\n');
-		h++;
+	}
+	else
+	{
+		int g, h;
+		
+		for (g = 0; g < size; g++)
+		{
+			for (h = 0; h < size; h++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
+		}
 	}
 }
