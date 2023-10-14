@@ -1,11 +1,11 @@
 #include "main.h"
-
 /**
- * main - check the code
+ * print_squares - prints a square followed by a new line
  * @size: size of the square
  * Return: Always 0.
  */
-void print_squares(int size)
+
+void print_square(int size)
 {
 	if (size <= 0)
 	{
