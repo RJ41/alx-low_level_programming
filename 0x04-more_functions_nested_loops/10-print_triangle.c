@@ -10,14 +10,17 @@ void print_triangle(int size)
 
 	if (size > 0)
 	{
-		for (has = 1; hash <= size; hash++)
+		for (hash = 1; hash <= size; hash++)
 		{
 			for (indent = size - hash; indent > 0; indent--)
 				_putchar(' ');
+			
 			for (indent = 0; indent < hash; indent++)
-				_putchar(' ');
+				_putchar('#');
+			
 			if (hash == size)
 				continue;
+
 			_putchar('\n');
 		}
 	}
