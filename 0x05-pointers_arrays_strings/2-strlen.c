@@ -3,14 +3,17 @@
 
 /**
  * _strlen - return the lengh of a string
- * @str: string to be printed
+ * @s: string to be printed
  * Return: 0
  */
-size_t _strlen(char *str)
+size_t _strlen(char *s)
 {
 	size_t length = 0;
 	
-	while (*str++)
+	while (*s != '\0')
+	{
 		length++;
+		s++;
+	}
 	return (length);
 }
