@@ -3,26 +3,22 @@
 /**
  * rev_string - reverses a string
  * @s: string to be printed
- * Return: 0
+ * Return: void
  */
+
 void rev_string(char *s)
 {
-	int length = 0;
-	
-	while (s[length] != '\0')
-		length++;
-	
-	int start;
-	int end = length - 1;
-	char temp;
-	
-	while (start < end)
+	char reverse = s[0];
+	int count = 0;
+	int n;
+
+	while (s[count] != '\0')
+		count++;
+	for (n = 0; n < count; n++)
 	{
-		temp = s[start];
-		s[start] = s[end];
-		s[end] = temp;
-		
-		start++;
-		end--;
+		count--;
+		reverse = s[n];
+		s[n] = s[count];
+		s[count] = reverse;
 	}
 }
